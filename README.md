@@ -12,5 +12,55 @@ Remember, it's self-paced so feel free to take a break! ☕️
 
 ---
 
+## Running the Application
+
+First, install the dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+To run the FastAPI server:
+
+```bash
+python -m uvicorn src.app:app --reload
+```
+
+The application will be available at `http://localhost:8000`
+
+## Running the Tests
+
+The project includes comprehensive pytest tests for all API endpoints. To run the tests:
+
+```bash
+pytest tests/ -v
+```
+
+To run tests with detailed output:
+
+```bash
+pytest tests/ -v --tb=short
+```
+
+To run a specific test file:
+
+```bash
+pytest tests/test_app.py -v
+```
+
+To run a specific test class:
+
+```bash
+pytest tests/test_app.py::TestSignupForActivity -v
+```
+
+To run a specific test:
+
+```bash
+pytest tests/test_app.py::TestSignupForActivity::test_signup_success -v
+```
+
+---
+
 &copy; 2025 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
 
