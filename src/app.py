@@ -21,6 +21,42 @@ app.mount("/static", StaticFiles(directory=os.path.join(Path(__file__).parent,
 
 # In-memory activity database
 activities = {
+    "Volleyball Team": {
+        "description": "Join the school volleyball team and participate in competitive matches",
+        "schedule": "Tuesdays and Thursdays, 4:00 PM - 5:30 PM",
+        "max_participants": 14,
+        "participants": ["sophie@mergington.edu"]
+    },
+    "Swimming Team": {
+        "description": "Compete in swimming events and improve your aquatic skills",
+        "schedule": "Mondays, Wednesdays, Fridays, 4:00 PM - 5:00 PM",
+        "max_participants": 20,
+        "participants": ["ryan@mergington.edu", "claire@mergington.edu"]
+    },
+    "Music Band": {
+        "description": "Play instruments and perform in school concerts and events",
+        "schedule": "Thursdays, 3:30 PM - 5:00 PM",
+        "max_participants": 25,
+        "participants": ["ethan@mergington.edu", "lily@mergington.edu"]
+    },
+    "Photography Club": {
+        "description": "Learn photography techniques and create visual art",
+        "schedule": "Saturdays, 1:00 PM - 3:00 PM",
+        "max_participants": 15,
+        "participants": ["chloe@mergington.edu"]
+    },
+    "Robotics Club": {
+        "description": "Build and program robots to compete in challenges",
+        "schedule": "Mondays and Wednesdays, 3:30 PM - 5:00 PM",
+        "max_participants": 18,
+        "participants": ["ben@mergington.edu", "zara@mergington.edu"]
+    },
+    "Model United Nations": {
+        "description": "Represent countries and debate on global issues",
+        "schedule": "Fridays, 4:00 PM - 5:30 PM",
+        "max_participants": 22,
+        "participants": ["carlos@mergington.edu"]
+    },
     "Chess Club": {
         "description": "Learn strategies and compete in chess tournaments",
         "schedule": "Fridays, 3:30 PM - 5:00 PM",
