@@ -23,13 +23,13 @@ document.addEventListener("DOMContentLoaded", () => {
         let participantsList = "";
         if (details.participants.length > 0) {
           participantsList = details.participants.map(p => `
-            <div class="participant-item">
-              <span>${p}</span>
+            <li class="participant-item">
+              <span class="participant-email">${p}</span>
               <button class="delete-btn" data-activity="${name}" data-email="${p}" title="Remove participant">✕</button>
-            </div>
+            </li>
           `).join("");
         } else {
-          participantsList = "<div class='participant-item'><em>No participants yet</em></div>";
+          participantsList = "<li class='participant-item participant-empty'><em>No participants yet</em></li>";
         }
 
         activityCard.innerHTML = `
@@ -39,9 +39,9 @@ document.addEventListener("DOMContentLoaded", () => {
           <p><strong>Availability:</strong> ${spotsLeft} spots left</p>
           <div class="participants-section">
             <strong>Participants (${details.participants.length}/${details.max_participants}):</strong>
-            <div class="participants-list">
+            <ul class="participants-list">
               ${participantsList}
-            </div>
+            </ul>
           </div>
         `;
 
